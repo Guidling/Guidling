@@ -49,7 +49,7 @@ function zoomOut() {
 
 function showMap() {
     Mapbox.show({
-        style: 'emerald',
+        style: 'mapbox://styles/guidling/cj5kxh5ec1zea2rpe55mur67s',  // light|dark|emerald|satellite|streets
         margins: {
             'left': 0,
             'right': 0,
