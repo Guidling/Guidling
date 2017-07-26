@@ -1,0 +1,13 @@
+{
+    "cordova-plugin-mapbox": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Telerik-Verified-Plugins/Mapbox",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {
+            "ACCESS_TOKEN": "sk.eyJ1IjoiZ3VpZGxpbmciLCJhIjoiY2o1a3huNGJhMGJwczJ3cGJ4azcwZGwxciJ9.jPwoV7CDlo5AJaGgXh3x9A"
+        }
+    }
+}
