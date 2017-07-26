@@ -27,4 +27,4 @@
     function onResume() {
         // TODO: Diese Anwendung wurde erneut aktiviert. Stellen Sie hier den Anwendungszustand wieder her.
     };
-} )();
+})();
