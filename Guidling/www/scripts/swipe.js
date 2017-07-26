@@ -80,10 +80,3 @@ $(document).on("pageshow", ".swipe", function () {
         $(".prev").addClass("ui-state-disabled");
     }
 });
-
-$(document).on("click", ".link", function () {
-    var link = $(this).jqmData("link");
-    $(":mobile-pagecontainer").pagecontainer("change", link, {
-        transition: "slide"
-     });
-});
