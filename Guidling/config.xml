@@ -3,7 +3,6 @@
   <name>Guidling</name>
   <description>Dein Guide für deine Stadt.</description>
   <author href="http://cordova.io" email="dev@cordova.apache.org">Guidling</author>
-  <vs:is-from-base-template>true</vs:is-from-base-template>
   <vs:template-name>BlankJS</vs:template-name>
   <vs:toolsetVersion>6.3.1</vs:toolsetVersion>
   <engine name="android" spec="5.2.1" />

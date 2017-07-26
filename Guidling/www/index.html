@@ -1,32 +1,51 @@
 ﻿<!DOCTYPE html>
 <html>
-    <head>
+<head>
     <!--
-        Passen Sie die Inhaltssicherheitsrichtlinie im META-Tag unten nach Bedarf an. Fügen Sie "default-src" die Option "unsafe-inline" hinzu, um Inline-JavaScript zu aktivieren.
-        Details finden Sie unter "http://go.microsoft.com/fwlink/?LinkID=617521".
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
     -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
-        
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
-        <title>Guidling</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Die Verbindung mit dem Gerät wird hergestellt.</p>
-                <p class="event received">Das Gerät ist bereit.</p>
-            </div>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <title>Mapbox test</title>
+</head>
+<body>
+    <div data-role="page" id="weather-page">
+
+        <div data-role="header" class="header">
+            <h1 id="app-title">Mapbox Test</h1>
+            <a href="/" class="ui-btn ui-btn-left ui-btn-corner-all ui-icon-home ui-btn-icon-notext" rel="external">Home</a>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="scripts/platformOverrides.js"></script>
-        <script type="text/javascript" src="scripts/index.js"></script>
-        <script src="scripts/jquery-2.1.0.min.js"></script>
-        <script src="scripts/jquery.mobile-1.4.5.min.js"></script>
-    </body>
+
+        <div role="main" class="ui-content">
+            <form>
+                <label for="zip-code">Das ist ein Mapbox Test.</label>
+            </form>
+
+            <ul id="routes" data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow not-displayed">
+                <li data-role="list-divider" id="title" class="ui-li-divider ui-bar-a"></li>
+                <li>Route 1: <span id="route1"></span></li>
+                <li>Route 2: <span id="route2"></span></li>
+                <li>Route 3: <span id="route3"></span></li>
+            </ul>
+        </div>
+
+        <footer data-role="footer" data-position="fixed">
+            <button data-role="button" data-icon="search" onclick="showMap()">Show</button>
+            <button data-role="button" data-icon="search" onclick="hideMap()">Hide</button>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+    <script src="scripts/jquery-1.8.0.min.js"></script>
+    <script src="scripts/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+    <script type="text/javascript" src="scripts/mapbox-scripts.js"></script>
+</body>
 </html>
