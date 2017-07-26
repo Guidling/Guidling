@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <title>Info</title>
+</head>
+<body>
+    <div data-role="page" id="city" class="swipe" data-dom-cache="true" data-theme="a" data-prev="index" data-next="tour" data-url="city">
+        <div role="main" class="ui-content">
+            <br/>
+            <br />
+            <br />
+            <ul data-role="listview">
+                <li><a href="#" class="link" data-link="tour.html">Tour Starten!</a></li>
+                <li><button onclick="showMap()">Map anzeigen</button></li>
+            </ul>
+        </div><!-- /content -->
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+    <script src="scripts/jquery-1.8.0.min.js"></script>
+    <script src="scripts/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="scripts/mapbox-scripts.js"></script>
+</body>
+</html>

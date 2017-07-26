@@ -14,32 +14,39 @@
     <title>Mapbox test</title>
 </head>
 <body>
-    <div data-role="page" id="weather-page">
+    <div id="header" data-role="header" data-id="header" data-position="fixed" data-fullscreen="false" data-tap-toggle="false">
+        <div data-role="header">
+            <h1>Guidling</h1>
+            </div>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#" class="link ui-btn-active" data-link="index.html">Routes</a></li>
+                    <li><a href="#" class="link" data-link="info.html">Info</a></li>
+                    <li><a href="#" class="link" data-link="tour.html">Tour</a></li>
+                </ul>
+            </div>
+        </div><!-- /header -->
 
-        <div data-role="header" class="header">
-            <h1 id="app-title">Mapbox Test</h1>
-            <a href="/" class="ui-btn ui-btn-left ui-btn-corner-all ui-icon-home ui-btn-icon-notext" rel="external">Home</a>
-        </div>
+    <div data-role="page" id="index" class="swipe" data-title="Routes" data-dom-cache="true" data-theme="a" data-next="info">
 
         <div role="main" class="ui-content">
-            <form>
-                <label for="zip-code">Das ist ein Mapbox Test.</label>
-            </form>
-
-            <ul id="routes" data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow not-displayed">
-                <li data-role="list-divider" id="title" class="ui-li-divider ui-bar-a"></li>
-                <li>Route 1: <span id="route1"></span></li>
-                <li>Route 2: <span id="route2"></span></li>
-                <li>Route 3: <span id="route3"></span></li>
+            <ul data-role="listview">
+                <li><a href="#" class="link" data-link="info.html">Route 1</a></li>
+                <li><a href="#" class="link" data-link="info.html">Route 2</a></li>
+                <li><a href="#" class="link" data-link="info.html">Route 3</a></li>
+                <li><a href="#" class="link" data-link="info.html">Route 4</a></li>
+                <li><a href="#" class="link" data-link="info.html">Route 5</a></li>
             </ul>
+        </div><!-- /content -->
+
+    </div><!-- /page -->
+
+    <div id="footer" data-id="footer" data-position="fixed" data-fullscreen="false" data-tap-toggle="false">
+        <div data-role="controlgroup" class="control ui-btn-left" data-type="horizontal" data-mini="true">
+            <a href="#" class="prev ui-btn ui-btn-icon-notext ui-icon-carat-l">Previous</a>
+            <a href="#" class="next ui-btn ui-btn-icon-notext ui-icon-carat-r">Next</a>
         </div>
-
-        <footer data-role="footer" data-position="fixed">
-            <button data-role="button" data-icon="search" onclick="showMap()">Show</button>
-            <button data-role="button" data-icon="search" onclick="hideMap()">Hide</button>
-        </footer>
-
-    </div>
+    </div><!-- /footer -->
 
     <script type="text/javascript" src="cordova.js"></script>
     <script src="scripts/platformOverrides.js"></script>
@@ -47,5 +54,6 @@
     <script src="scripts/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript" src="scripts/index.js"></script>
     <script type="text/javascript" src="scripts/mapbox-scripts.js"></script>
+    <script type="text/javascript" src="scripts/swipe.js"></script>
 </body>
 </html>

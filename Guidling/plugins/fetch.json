@@ -9,5 +9,29 @@
         "variables": {
             "ACCESS_TOKEN": "sk.eyJ1IjoiZ3VpZGxpbmciLCJhIjoiY2o1a3huNGJhMGJwczJ3cGJ4azcwZGwxciJ9.jPwoV7CDlo5AJaGgXh3x9A"
         }
+    },
+    "cordova-plugin-globalization": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-globalization"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-geolocation": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-geolocation"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-compat": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-compat"
+        },
+        "is_top_level": false,
+        "variables": {}
     }
 }
