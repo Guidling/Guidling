@@ -1,4 +1,5 @@
 ﻿var zoom = 10;
+var currentUserLocation;
 
 function setCenter() {
     Mapbox.setCenter({
@@ -53,14 +54,15 @@ function showMap() {
         margins: {
             'left': 0,
             'right': 0,
-            'top': 0,
-            'bottom': 160
+            'top': 200,
+            'bottom': document.getElementById('footer').clientHeight
         },
         center: {
-            lat: 52.3702160,
-            lng: 4.8951680
+            //wien
+            lat: 48.20266870763858,
+            lng: 16.36887001907334
         },
-        zoomLevel: zoom, // 0 (the entire world) to 20, default 10
+        zoomLevel: 17, // 0 (the entire world) to 20, default 10
         showUserLocation: true, // default false
         hideAttribution: true, // default false
         hideLogo: true, // default false
@@ -215,3 +217,25 @@ function screen2Coords(point) {
             alert(error)
         })
 }
+
+
+////////////Eigene Funktionen///////////////
+var setMapCenter = function (position) {
+    Mapbox.setCenter({
+        'lat': position.coords.latitude,
+        'lng': position.coords.longitude,
+        'animated': true // default false
+    });
+};
+
+// onError Callback receives a PositionError object
+//
+function onError(error) {
+    alert('code: ' + error.code + '\n' +
+        'message: ' + error.message + '\n');
+}
+
+function getUserLocation() {
+    navigator.geolocation.getCurrentPosition(setMapCenter, onError);
+}
+
