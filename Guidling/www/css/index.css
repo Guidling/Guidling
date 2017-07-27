@@ -1,0 +1,5 @@
+/* Verbiete side-scrolling! */
+div.wrapper {
+    overflow: hidden;
+    width: inherit;
+}

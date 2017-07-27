@@ -26,11 +26,9 @@
     </div><!-- /header -->
 
     <div data-role="page" data-title="Routen">
-
         <div role="main" class="ui-content">
 
             Index
-
             <ul data-role="listview">
                 <li><a href="info.html" data-transition="slide">Route 1</a></li>
                 <li><a href="info.html" data-transition="slide">Route 2</a></li>
@@ -40,11 +38,13 @@
             </ul>
 
         </div><!-- /content -->
-
     </div><!-- /page -->
 
-    <div data-role="footer" data-position="fixed" data-theme="a">
-        <button onclick="showMap()">Map anzeigen</button>
+    <div data-role="footer" data-id="footer" class="ui-bar" data-position="fixed" data-theme="a">
+        <div data-role="controlgroup" data-type="horizontal">
+            <a href="#" onclick="showMap()" data-role="button" data-icon="arrow-u" data-mini="true">Show Map</a>
+            <a href="#" onclick="hideMap()" data-role="button" data-icon="arrow-d" data-mini="true">Hide Map</a>
+        </div>
     </div><!-- /footer -->
 
     <script type="text/javascript" src="cordova.js"></script>
