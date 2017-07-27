@@ -2,6 +2,7 @@
 // http://go.microsoft.com/fwlink/?LinkID=397704
 // Zum Debuggen von Code beim Laden einer Seite in cordova-simulate oder auf Android-Geräten/-Emulatoren: Starten Sie Ihre App, legen Sie Haltepunkte fest, 
 // und führen Sie dann "window.location.reload()" in der JavaScript-Konsole aus.
+
 (function () {
     "use strict";
 

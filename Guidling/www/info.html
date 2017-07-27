@@ -14,22 +14,39 @@
     <title>Info</title>
 </head>
 <body>
-    <div data-role="page" class="swipe" data-dom-cache="true" data-theme="a" data-prev="index" data-next="tour">
+    <div data-role="header" data-position="fixed" data-theme="a">
+        <h1>Guidling</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="index.html" data-prefetch="true" data-transition="fade">Routen</a></li>
+                <li><a href="info.html" data-prefetch="true" data-transition="fade">Info</a></li>
+                <li><a href="tour.html" data-prefetch="true" data-transition="fade">Tour</a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div><!-- /header -->
+
+    <div data-role="page" data-title="Info" class="jqm-demos">
+
         <div role="main" class="ui-content">
-            <br/>
-            <br />
-            <br />
+
             <ul data-role="listview">
                 <li><a href="tour.html" data-transition="slide">Tour Starten!</a></li>
                 <li><button onclick="showMap()">Map anzeigen</button></li>
             </ul>
+
         </div><!-- /content -->
-    </div>
+
+    </div><!-- /page -->
+
+    <div data-role="footer" data-position="fixed" data-theme="a">
+        <h1>Footer</h1>
+    </div><!-- /footer -->
 
     <script type="text/javascript" src="cordova.js"></script>
-    <script src="scripts/platformOverrides.js"></script>
-    <script src="scripts/jquery-1.8.0.min.js"></script>
-    <script src="scripts/jquery.mobile-1.4.5.min.js"></script>
-    <script type="text/javascript" src="scripts/mapbox-scripts.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="scripts/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="scripts/navbar.js"></script>
+    <script type="text/javascript" src="scripts/mapbox.js"></script>
 </body>
 </html>
